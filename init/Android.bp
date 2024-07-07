@@ -8,7 +8,6 @@ cc_library_static {
     ],
     cflags: [
         "-Wall",
-        "-Wenum",
     ],
     static_libs: [
         "libbase",
