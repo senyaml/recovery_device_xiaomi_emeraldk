@@ -145,7 +145,7 @@ on property:sys.usb.ffs.ready=1
     start mountfix
 
 on property:hwservicemanager.ready=true
-    start mitee_shell
+    start mobicore
     start gatekeeper-1-0
     start keymint-mitee
     start keymaster-4-0    
@@ -157,19 +157,19 @@ on property:vendor.sys.listener.registered=true
     start keymaster-4-0
    
 on property:ro.crypto.state=unsupported
-    stop mitee_shell
+    stop mobicore
     stop keymint-mitee
     stop gatekeeper-1-0
     stop keymaster-4-0
 
 on property:ro.crypto.state=unencrypted
-    stop mitee_shell
+    stop mobicore
     stop keymint-mitee
     stop gatekeeper-1-0
     stop keymaster-4-0
     
 on property:twrp.all.users.decrypted=true
-    stop mitee_shell
+    stop mobicore
     stop keymint-mitee
     stop gatekeeper-1-0
     stop keymaster-4-0
