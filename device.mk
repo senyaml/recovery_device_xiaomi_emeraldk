@@ -96,5 +96,5 @@ TW_LOAD_VENDOR_MODULES := "flashlight.ko flashlights-mt6789.ko"
 
 # Vendor ramdisk
 PRODUCT_COPY_FILES += \
-     device/xiaomi/rock/fstab.mt6789:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.mt6789 
+     device/xiaomi/emerald/fstab.mt6789:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.mt6789 
 
