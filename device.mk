@@ -52,8 +52,13 @@ AB_OTA_PARTITIONS += \
     vbmeta_system \
     vbmeta_vendor \
     vendor \
+<<<<<<< HEAD
 	vendor_dlkm \
 	odm_dlkm \
+=======
+    vendor_dlkm \
+    odm_dlkm \
+>>>>>>> 0746d030b6ac345e54c91a6ce4e24384d1e0727e
     vendor_boot
     
 AB_OTA_POSTINSTALL_CONFIG += \
@@ -92,11 +97,11 @@ TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
     $(TARGET_OUT_SHARED_LIBRARIES)/libion.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/libpuresoftkeymasterdevice.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/android.hardware.vibrator-V1-ndk_platform.so \
-	$(TARGET_OUT_SHARED_LIBRARIES)/android.hardware.vibratorfeature.so
+    $(TARGET_OUT_SHARED_LIBRARIES)/android.hardware.vibratorfeature.so
 
 TW_LOAD_VENDOR_MODULES := "flashlight.ko flashlights-mt6789.ko ft3683g.ko xiaomi.ko"
 
 # Vendor ramdisk
 PRODUCT_COPY_FILES += \
-     device/xiaomi/rock/fstab.mt6789:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.mt6789 
+     device/xiaomi/emerald/fstab.mt6789:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.mt6789 
 
