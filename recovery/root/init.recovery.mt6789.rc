@@ -1,5 +1,7 @@
 import /tee-supplicant.rc
 import /miteelog.rc
+import /vold.rc
+import /vdc.rc
 
 on init
     # Create a more standard /dev/block layout for our scripts
@@ -32,6 +34,12 @@ on init
     
 on fs
     install_keyring
+    wait /dev/block/platform/soc/11270000.ufshci
+    symlink /dev/block/platform/soc/11270000.ufshci /dev/block/bootdevice
+	
+# We need vold early for metadata encryption
+on early-fs
+    start vold
 
 
 on post-fs
