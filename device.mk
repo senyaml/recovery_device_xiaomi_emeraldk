@@ -95,6 +95,10 @@ TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
 
 TW_LOAD_VENDOR_MODULES := "flashlight.ko flashlights-mt6789.ko ft3683g.ko xiaomi.ko"
 
+# Init
+TARGET_INIT_VENDOR_LIB := libinit_emerald
+TARGET_RECOVERY_DEVICE_MODULES := libinit_emerald
+
 # Vendor ramdisk
 PRODUCT_COPY_FILES += \
      device/xiaomi/emerald/fstab.mt6789:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.mt6789 
