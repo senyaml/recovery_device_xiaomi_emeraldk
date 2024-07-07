@@ -1,7 +1,7 @@
 <!--
     Input:
-	    manifest.xml
-		manifest.xml
+	manifest.xml
+	manifest.xml
         manifest_sensor_hidl_v2.xml
         manifest_audio.xml
         manifest_dsds.xml
