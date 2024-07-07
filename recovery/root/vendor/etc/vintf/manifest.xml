@@ -74,6 +74,11 @@
         </interface>
         <fqname>@7.0::IEffectsFactory/default</fqname>
     </hal>
+	 <hal format="hidl">
+        <name>android.hardware.health</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.1::IHealth/default</fqname>
+    </hal>
     <hal format="hidl">
         <name>android.hardware.bluetooth</name>
         <transport>hwbinder</transport>
