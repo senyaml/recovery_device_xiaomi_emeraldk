@@ -97,6 +97,13 @@ service mtk.plpath.utils.link /system/bin/mtk_plpath_utils
     disabled
     oneshot
     seclabel u:r:recovery:s0
+
+service keystore2 /system/bin/keystore2
+    oneshot
+    user system
+    group root
+    disabled
+    seclabel u:r:recovery:s0
 	
 service keymaster-4-0-mitee /system/bin/android.hardware.keymaster@4.0-service.mitee
     user root
